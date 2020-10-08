@@ -1,0 +1,164 @@
+ body{
+	margin:0;
+	padding: 0;
+	background: #0c002b;
+	font-family: sans-serif;
+}
+.box{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	color:#1670f0;
+	padding: 30px 60px;
+	font-size: 20Px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+.box:before
+{
+	content:'';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width: 50%;
+	background: rgba(255,255,255,0.05);
+}
+.box .login h1{
+	text-align: center;
+}
+.box .login input[type="text"],.box .login input[type="password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.50s;
+
+
+}
+.box .login input[type="text"]:focus, .box .login input[type="password"]:focus{
+	width: 280px;
+	border-color: #2ecc21;
+}
+
+.box .login input[type="submit"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc21;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.box .login input[type="submit"]:hover{
+	background: #2ecc21;
+}
+.box span:nth-child(1)
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, #0c002b,#1779ff);
+	animation: animate1 2s linear infinite;
+	animation-delay: 1s;
+
+}
+@keyframes animate1
+{
+	0%
+	{
+		transform: translateX(-100%);
+	}
+	100%
+	{
+		transform: translateX(100%);
+	}
+}
+.box span:nth-child(2)
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to bottom, #0c002b,#1779ff);
+	animation: animate2 2s linear infinite;
+
+}
+@keyframes animate2
+{
+	0%
+	{
+		transform: translateY(-100%);
+	}
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
+.box span:nth-child(3)
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left, #0c002b,#1779ff);
+	animation: animate3 2s linear infinite;
+
+	animation-delay: 1s;
+
+}
+@keyframes animate3
+{
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+.box span:nth-child(4)
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to top, #0c002b,#1779ff);
+	animation: animate4 2s linear infinite;
+	
+
+}
+@keyframes animate4
+{
+	0%
+	{
+		transform: translateY(100%);
+	}
+	100%
+	{
+		transform: translateY(-100%);
+	}
+}
